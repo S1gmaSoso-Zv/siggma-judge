@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGGMA JUDGE</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/theme/dracula.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="left-panel">
+        <div class="header">SIGGMA JUDGE_</div>
+        
+        <div style="margin-bottom: 15px; display: flex; gap: 10px;">
+            <select id="topicSelect" style="flex-grow: 1; padding: 8px; background: #252526; color: white; border: 1px solid #4CAF50; border-radius: 4px;">
+                <option value="Сложные алгоритмы и структуры данных">Алгоритмы (LeetCode)</option>
+                <option value="Олимпиадное программирование (Codeforces)">Олимп. прога</option>
+                <option value="Техническое собеседование на Junior Python">Собеседование</option>
+            </select>
+            
+            <select id="difficultySelect" style="padding: 8px; background: #252526; color: white; border: 1px solid #4CAF50; border-radius: 4px;">
+                <option value="Легкий">Легкая</option>
+                <option value="Средний" selected>Средняя</option>
+                <option value="Хардкор">Хардкор</option>
+            </select>
+
+            <button id="getTaskBtn" style="background: #007acc;">Дай задачу!</button>
+        </div>
+
+        <div class="chat-box" id="chat">привет. выбери тему и сложность сверху, нажми "дай задачу", либо просто пиши код.</div>
+    </div>
+
+    <<div class="right-panel">
+        <div class="controls">
+            <button id="runBtn">🚀 отправить на проверку</button>
+        </div>
+        <textarea id="code-editor">def solve():
+    pass
+
+solve()</textarea>
+        <textarea id="stdin-input" placeholder="Входные данные (если в коде есть input()). Вводи каждое значение с новой строки." style="height: 150px; background: #1e1e1e; color: #fff; border: none; border-top: 2px solid #333; padding: 15px; font-family: monospace; resize: none;"></textarea>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/python/python.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>

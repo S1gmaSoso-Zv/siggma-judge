@@ -1,0 +1,14 @@
+body { margin: 0; font-family: 'Segoe UI', Tahoma, sans-serif; background: #1e1e1e; color: #fff; display: flex; height: 100vh; overflow: hidden; }
+
+.left-panel { width: 40%; padding: 20px; box-sizing: border-box; display: flex; flex-direction: column; border-right: 2px solid #333; }
+.header { font-size: 24px; font-weight: bold; margin-bottom: 20px; color: #4CAF50; letter-spacing: 1px; }
+.chat-box { flex-grow: 1; background: #252526; padding: 20px; border-radius: 8px; overflow-y: auto; font-size: 15px; line-height: 1.6; border: 1px solid #333; white-space: pre-wrap; }
+
+.right-panel { width: 60%; display: flex; flex-direction: column; background: #282a36; }
+.controls { padding: 15px; background: #1e1e1e; display: flex; justify-content: flex-end; border-bottom: 2px solid #333; }
+
+button { background: #4CAF50; color: white; border: none; padding: 10px 24px; font-size: 14px; cursor: pointer; border-radius: 4px; font-weight: bold; transition: 0.2s; text-transform: uppercase; }
+button:hover { background: #45a049; transform: translateY(-1px); }
+button:disabled { background: #555; cursor: not-allowed; transform: none; }
+
+.CodeMirror { height: 100%; font-size: 16px; font-family: 'Consolas', monospace; }
