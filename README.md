@@ -35,50 +35,44 @@ ollama run mistral
 
 Убедитесь, что приложение Ollama запущено и работает в фоне.
 
-Markdown
-**2. Настройка проекта**
+2. Настройка проекта
 Склонируйте этот репозиторий на свой компьютер:
-```bash
+
+```Bash
 git clone [https://github.com/S1gmaSoso-Zv/siggma-judge.git](https://github.com/S1gmaSoso-Zv/siggma-judge.git)
 ```
+Затем перейдите в папку проекта:
 
-**3. Виртуальное окружение**
+```Bash
+cd siggma-judge
+```
+3. Виртуальное окружение
 Создайте изолированное окружение, чтобы не засорять систему:
 
-```bash
+```Bash
 python -m venv venv
-
-```
-
 Активируйте его.
+```
 Для Windows:
 
-```bash
+```Bash
 .\venv\Scripts\activate
-
 ```
-
 Для Linux/macOS:
 
-```bash
+```Bash
 source venv/bin/activate
-
 ```
-
-**4. Зависимости**
+4. Зависимости
 Установите необходимые пакеты для работы сервера:
 
-```bash
+```Bash
 pip install fastapi uvicorn httpx pydantic
-
 ```
-
-**5. Запуск**
+5. Запуск
 Запустите бэкенд:
 
-```bash
+```Bash
 uvicorn backend.main:app --reload
-
 ```
-
-После того как в консоли появится сообщение об успешном старте, просто откройте файл `frontend/index.html` в любом браузере.
+После того как в консоли появится сообщение об успешном старте, просто откройте файл frontend/index.html в любом браузере.
