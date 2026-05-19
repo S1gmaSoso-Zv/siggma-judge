@@ -40,7 +40,7 @@ Markdown
 Склонируйте этот репозиторий на свой компьютер:
 ```bash
 git clone [https://github.com/S1gmaSoso-Zv/siggma-judge.git](https://github.com/S1gmaSoso-Zv/siggma-judge.git)
-
+```
 
 **3. Виртуальное окружение**
 Создайте изолированное окружение, чтобы не засорять систему:
